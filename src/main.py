@@ -40,7 +40,7 @@ def shipping_charge(total):
         return 0
     #If something less that 1000 in cart.
     else:
-        return total+1000
+        return total+500
     
 def final_bill(cart_items, coupon_code):
     c_value = calculate_total(cart_items)
