@@ -1,8 +1,8 @@
 def calculate_total(cart_items):
     total = 0
     for i in cart_items:
-        if i["qty"]<0:
-            return -1
+        # if i["qty"]<0:
+        #     return -1
         if i["price"]<0:
             return -1
         total += (i["price"] * i["qty"])
