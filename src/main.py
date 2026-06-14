@@ -8,16 +8,16 @@ def calculate_total(cart_items):
         total += (i["price"] * i["qty"])
     
     #If the price is entered in negative or qty is entered in negative    
-    if total<0:
-        return -1
+    # if total<0:
+    #     return -1
     
     return total
 
 
 def apply_coupon(total, coupon_code):
     #If by chance total entered is less that 0.
-    # if total<0:
-    #     return -1
+    if total<0:
+        return -1
     values = {
         f"SAVE{i}":i/100 for i in range(10,110,10)
     }
