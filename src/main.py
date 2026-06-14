@@ -16,8 +16,8 @@ def calculate_total(cart_items):
 
 def apply_coupon(total, coupon_code):
     #If by chance total entered is less that 0.
-    # if total<0:
-    #     return -1
+    if total<0:
+        return -1
     values = {
         f"SAVE{i}":i/100 for i in range(10,110,10)
     }
